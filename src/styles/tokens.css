@@ -1,0 +1,159 @@
+:root {
+  /* ==========================================================================
+     CivicConnect Design System Tokens (Vanilla CSS)
+     Designed for Indian Civic Infrastructure, Reliability, and Accessibility.
+     ========================================================================== */
+
+  /* Primary Brand Colors (Deep Navy / Digital Public Infrastructure Blue) */
+  --color-primary-50: hsl(214, 100%, 97%);
+  --color-primary-100: hsl(214, 95%, 93%);
+  --color-primary-200: hsl(213, 94%, 86%);
+  --color-primary-300: hsl(212, 92%, 74%);
+  --color-primary-400: hsl(213, 90%, 63%);
+  --color-primary-500: hsl(217, 91%, 54%); /* Core Action Blue */
+  --color-primary-600: hsl(221, 83%, 45%);
+  --color-primary-700: hsl(224, 76%, 36%);
+  --color-primary-800: hsl(226, 71%, 26%);
+  --color-primary-900: hsl(224, 64%, 18%); /* Deep Civic Navy */
+  --color-primary-950: hsl(226, 68%, 10%);
+
+  /* Secondary Accent Colors (Civic Saffron / Warm Amber) */
+  --color-accent-50: hsl(48, 100%, 96%);
+  --color-accent-100: hsl(48, 100%, 88%);
+  --color-accent-400: hsl(43, 96%, 56%);
+  --color-accent-500: hsl(38, 92%, 50%); /* Saffron Gold */
+  --color-accent-600: hsl(32, 95%, 44%);
+  --color-accent-700: hsl(26, 90%, 37%);
+
+  /* Civic Emerald / Resolution Green */
+  --color-success-50: hsl(152, 76%, 96%);
+  --color-success-100: hsl(149, 80%, 90%);
+  --color-success-500: hsl(158, 64%, 42%);
+  --color-success-600: hsl(160, 84%, 34%);
+  --color-success-700: hsl(161, 94%, 25%);
+
+  /* Warning / Pending Verification */
+  --color-warning-50: hsl(48, 100%, 96%);
+  --color-warning-500: hsl(38, 92%, 50%);
+  --color-warning-600: hsl(32, 95%, 44%);
+
+  /* Danger / Emergency / Critical */
+  --color-danger-50: hsl(0, 86%, 97%);
+  --color-danger-100: hsl(0, 93%, 94%);
+  --color-danger-500: hsl(0, 84%, 60%);
+  --color-danger-600: hsl(0, 72%, 51%);
+  --color-danger-700: hsl(0, 74%, 42%);
+
+  /* Information / Notice */
+  --color-info-50: hsl(199, 89%, 96%);
+  --color-info-500: hsl(199, 89%, 48%);
+  --color-info-700: hsl(201, 96%, 32%);
+
+  /* Neutral Surface & Slate Grays */
+  --color-gray-50: hsl(210, 20%, 98%);
+  --color-gray-100: hsl(220, 14%, 96%);
+  --color-gray-200: hsl(220, 13%, 91%);
+  --color-gray-300: hsl(216, 12%, 84%);
+  --color-gray-400: hsl(218, 11%, 65%);
+  --color-gray-500: hsl(220, 9%, 46%);
+  --color-gray-600: hsl(215, 14%, 34%);
+  --color-gray-700: hsl(217, 19%, 27%);
+  --color-gray-800: hsl(215, 28%, 17%);
+  --color-gray-900: hsl(221, 39%, 11%);
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Semantic Theme Aliases */
+  --bg-page: var(--color-gray-50);
+  --bg-surface: var(--color-white);
+  --bg-surface-subtle: hsl(210, 25%, 97%);
+  --bg-surface-hover: hsl(214, 32%, 95%);
+  --bg-surface-glass: rgba(255, 255, 255, 0.85);
+
+  --text-primary: var(--color-gray-900);
+  --text-secondary: var(--color-gray-600);
+  --text-muted: var(--color-gray-500);
+  --text-inverse: var(--color-white);
+
+  --border-subtle: var(--color-gray-200);
+  --border-default: var(--color-gray-300);
+  --border-strong: var(--color-gray-400);
+  --border-focus: var(--color-primary-500);
+
+  /* Typography Tokens */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', var(--font-sans);
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+
+  /* Border Radius */
+  --radius-xs: 0.25rem;  /* 4px */
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 0.75rem;  /* 12px */
+  --radius-xl: 1rem;     /* 16px */
+  --radius-2xl: 1.5rem;  /* 24px */
+  --radius-full: 9999px;
+
+  /* Shadows (Curated Layered Elevation) */
+  --shadow-xs: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(16, 24, 40, 0.1), 0 1px 2px -1px rgba(16, 24, 40, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(16, 24, 40, 0.1), 0 2px 4px -2px rgba(16, 24, 40, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(16, 24, 40, 0.1), 0 4px 6px -4px rgba(16, 24, 40, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(16, 24, 40, 0.1), 0 8px 10px -6px rgba(16, 24, 40, 0.05);
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Container Max Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1440px;
+
+  /* Z-Index Hierarchy */
+  --z-banner: 900;
+  --z-sticky: 1000;
+  --z-dropdown: 1050;
+  --z-drawer: 1100;
+  --z-modal-backdrop: 1200;
+  --z-modal: 1250;
+  --z-toast: 1300;
+}
